@@ -1,0 +1,44 @@
+.headerTop {
+  padding-top: 16px;
+  background-color: #333333;
+  color: #b0b0b0;
+  position: relative;
+  height: 60px;
+  .topRight {
+    position: absolute;
+    right: 32px;
+    top: 8px;
+    display: flex;
+    height: 40px;
+    .link,.cart {
+      display: inline-block;
+      height: 40px;
+      line-height: 40px;
+    }
+    .link{
+      text-decoration: none;
+      color: #b0b0b0;
+      font-size: 14px;
+      margin-right: 8px;
+    }
+
+    .cart {
+      //todo 如何这里使用flex布局就会换行,有机会问问为什么,用flex为了便捷的对齐子元素
+      background-color: #424242;
+      color: #b0b0b0;
+      .cartIcon {
+        position: relative;
+        top: 4px;
+        left: 8px;
+        font-size: 24px;
+        color: #b0b0b0;
+      }
+
+      .cartButton {
+        color: #b0b0b0;
+        font-size: 14px;
+      }
+    }
+
+  }
+}

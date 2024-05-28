@@ -1,0 +1,74 @@
+.order {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-left: 32px;
+
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+
+  .orderList {
+    flex-grow: 1;
+
+    .orderItem {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 16px;
+
+      .orderTop {
+        .orderStatus {
+          color: #ff6700;
+          font-size: 24px;
+          font-weight: bold;
+        }
+
+        .orderInfo {
+          display: flex;
+          margin-top: 16px;
+
+          .orderTime {
+            margin-right: 16px;
+          }
+
+          .orderPayPrice {
+            flex-grow: 1;
+            text-align: right;
+
+            .priceNumber {
+              font-size: 32px;
+            }
+          }
+        }
+      }
+
+      .orderBottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .productInfo {
+          display: flex;
+          flex-grow: 1;
+          align-items: center;
+          .productImg {
+            margin-right: 16px;
+          }
+        }
+      }
+    }
+
+    .optionButton {
+      .button {
+        margin-right: 8px;
+      }
+    }
+  }
+
+  .page {
+    display: flex;
+    margin-top: 16px;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,52 @@
+.navBar {
+  position: relative;
+  height: fit-content;
+
+  .navList {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(105, 101, 101, .6);
+
+    .navItem {
+      padding: 16px 0 16px 30px;
+      position: relative;
+      color: white;
+      height: 52px;
+      .rightIcon {
+        position: absolute;
+        right: 18px;
+      }
+      &:hover {
+        background-color: #ff6700;
+      }
+    }
+  }
+
+  .childList {
+    position: absolute;
+    left: 200px;
+    top: 0;
+    //控制二级菜单显示
+    display: flex;
+    width: max-content;
+    height: 416px;
+    padding-left: 18px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+  .childItem {
+    width: 100px;
+    height: 76px;
+    line-height: 76px;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover {
+      color: #ff6700;
+    }
+  }
+
+  }
+}
